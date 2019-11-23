@@ -1,0 +1,28 @@
+Here is the following files not required to understand
+
+vendor
+    created by composer
+
+data
+    init.sql
+        used for init create database and initData like admin account etc
+
+public
+    assets
+        a file store css, images, js, plugins
+    storage
+        the place to store image
+.htaccess
+.vscode
+
+(packagist files)          
+    package-lock.json
+    package.json
+    composer.json
+-----------------------------------------------------------------
+public 
+    templates
+        files that shared in many places
+            not supposed to enter directly
+            suppose access with method of include
+            block access thorugh .htaccess

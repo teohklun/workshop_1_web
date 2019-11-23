@@ -1,0 +1,12 @@
+if your database is lose
+
+please make sure the soruce folder name is test,
+make sure the xampp inside the c drive file, because the picture path is declared at defineDate.php,
+ and it may due to some mistake by does not use the constant, so better do not change it
+
+go to http://localhost/test/install.php
+    // it will create database and tables with init database
+
+if still got the database file please include it directly in C drive
+    open xampp
+        go to http://localhost/test/public/home/index.php

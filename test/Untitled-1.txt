@@ -1,0 +1,32 @@
+#include <iostream>
+#include "Header.h"
+#include <string>
+using namespace std;
+
+int main()
+{
+	TSHIRT <int, string> data;
+	string target;
+	char choice;
+	int searchArea;
+
+	do {
+		data.initialise();
+		cout << "1. ID\n2. BRAND\n3. COULOR   " << endl;
+		cin >> searchArea;
+		cin >> target;
+
+		for (int i = 0; i != data.item; i++)
+		{
+			data.search(searchArea, target);
+			if (i == 4 && data.track == 0)
+			{
+				cout << "Data not found" << endl;
+			}
+		}
+		cout << "If you want to search again press Y or y if you dont press n" << endl;
+		cin >> choice;
+	} while (choice == 'Y' || choice == 'y');
+
+	return 0;
+}
